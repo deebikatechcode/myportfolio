@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+
+.header {
+
+  height: 100vh;
+  width: 100%;
+  background-image: url("images/ai4.jpg");
+  background-size: cover;
+  background-position: center;
+ 
+
+} 
+
+span {
+  color:blue;
+}
+
+.fa-bars{
+  color: blue;
+}
+#demo{
+  font-size: 30px;
+  color: blue;
+  text-shadow: 2px 2px 2px 0px;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  animation: float 5s infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  75%{
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+ 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-size-adjust: 1px;
+
+}
+
+.logo {
+  color:wheat;
+  cursor: pointer;
+  font-size: 30px;
+  letter-spacing: 1px;
+  
+}
+
+.btn {
+  background-color:blue;
+  color:white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding:10px 10px;
+  border-radius: 30px;
+  transition:.2s;
+  
+
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: blue;
+  transition: .2s;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block; 
+  cursor: pointer;
+  padding: 10px 25px;
+
+
+}
+
+nav ul li a {
+  color: wheat;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  animation: sideleft 1s ease forwards;
+  animation-delay: calc(.2s * var(--i)) ;
+}
+@keyframes sideleft { 
+  0% { transform: translateX(-400px); opacity: 0;}
+  80% {opacity: 1;}
+  100% { transform: translateX(0); }
+}
+
+ul li a:hover {
+  color: blue;
+  transition: .5s;
+}
+
+.body {
+
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  transform: translateY(-50%);
+  
+}
+
+h1
+{
+   color: aliceblue;
+   font-size: 50px;
+   padding: auto;
+}
+
+h1 span{
+  color: blue;
+  margin: 20px 0px 20px;
+}
+
+h3 {
+  color:blue;
+  font-size:25px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  color:wheat;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding-top: 70px;
+ 
+}
+
+.fo form {
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+
+
+
+.fo form input:first-child {
+  border-radius: 50px;
+  position:absolute;
+  padding-top: 20px;
+  bottom: 60px;
+  right: 70px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  outline: none;
+  border: none;
+  padding: 10px 10px; 
+  color: white;
+
+}
+
+
+.about {
+  width: 100%;
+  padding: 100px 0px;
+  background-color:gray;
+  box-sizing:border-box;
+
+}
+
+.about img {
+  height: auto;
+  width: 300px;
+  border-radius: 50%;
+  border-color: blue;
+  cursor: pointer;
+}
+
+.atext {
+  width: 550px;
+}
+
+.main {
+  width: 1200px;
+  max-width:100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.atext h2{
+  font-size: 35px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.atext h5{
+  color:black;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.atext p{
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+button{
+  background-color:blue;
+  color:white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding:13px 20px;
+  border-radius: 30px;
+  transition:.2s;
+}
+button:hover{
+  background-color: transparent;
+  color: blue;
+  box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+/*******************************Skills **********************/
+
+.container {
+ 
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+ 
+h2 {
+  text-align: center;
+}
+/* Card styles */
+.card1 {
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 10px;
+  width: 40%;
+  float: left;
+  
+}
+
+.card-content {
+  padding: 20px;
+}
+.card-content h3 {
+  margin-top: 0;
+  color: white;
+}
+.card-content p {
+  margin-bottom: 10px;
+  color: white;
+}
+.progress {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.progress-bar {
+  background-color:blue;
+  height: 100%;
+  border-radius: 5px;
+  width: 0;
+}
+.progress-label {
+  text-align: right;
+  margin-top: -12px;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  color: white;
+}
+
+
+/*Services*/
+.services{
+  background:black;
+  width:100%;
+  padding: 80px 0px;
+  opacity: .8;
+ 
+}
+.title h2{
+  color:  wheat;
+  font-size: 45px;
+  width: 1130px;
+  margin: 20px auto;
+  text-align: center;
+
+}
+.box{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card{
+  height: 430px;
+  width: 335px;
+  padding: 20px 35px;
+  background:gray;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.6);
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+ 
+}
+.card:hover{
+  transform: rotateX(10deg);
+}
+.card i{
+  font-size:30px;
+  color:black;
+  display: block;
+  margin:15px 0px;
+  text-align: center;
+}
+h5{
+  color: black;
+  font-size:25px;
+  margin-bottom: 15px;
+}
+.pg p{
+  color: black;
+  font-size: 14px;
+  line-height: 28px;
+
+}
+.pg .button{
+  background-color:blue;
+  color: white;
+  text-decoration: none;
+  border: 1px solid transparent;
+  font-weight: bold;
+  padding:8px 9px;
+  border-radius: 30px;
+  transition:.2s;
+  margin:20px;
+
+
+}
+.pg .button:hover{
+  background-color: transparent;
+  color: blue;
+  box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+
+
+
+footer{
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: grey;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity:0.8;
+}
+footer p:nth-child(1){
+  font-size: 20px;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+footer p:nth-child(2){
+  color:black;
+  font-size: 15px;
+  width: 500px;
+  text-align: center;
+  line-height: 17px;
+}
+.social{
+  display: flex;
+
+}
+.social a{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:blue;
+  margin: 0 10px;
+  color: white;
+  border-radius: 50%;
+}
+.social a:hover{
+  transform:scale3d(1.1,1.1,1);
+  
+}
+.dot{
+  position:absolute;
+  bottom: 35px;
+  color:black;
+
+  font-family:'Open Sans',sans-serif;
+  font-size:12px;
+}

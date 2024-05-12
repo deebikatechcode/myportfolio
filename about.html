@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio About Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300&family=Rubik+Doodle+Shadow&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .header {
+
+      height: 25vh;
+      width: 100%;
+      background-color: black;
+      background-size: cover;
+      background-position: center;
+      font-family: 'poppins';
+
+    }
+
+    span {
+      color: blue;
+    }
+
+    .fa-bars {
+      color: blue;
+    }
+
+    #demo {
+      font-size: 30px;
+      color: blue;
+      text-shadow: 2px 2px 2px 0px;
+      text-align: left;
+      display: inline-block;
+      position: relative;
+      animation: float 5s infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+
+      75% {
+        transform: translateY(-20px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 45px;
+      padding-left: 8%;
+      padding-right: 8%;
+      text-size-adjust: 1px;
+
+    }
+
+    .logo {
+      color: wheat;
+      cursor: pointer;
+      font-size: 30px;
+      letter-spacing: 1px;
+
+    }
+
+    .btn {
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 10px 10px;
+      border-radius: 30px;
+      transition: .2s;
+
+
+    }
+
+    .btn:hover {
+      background-color: transparent;
+      color: blue;
+      transition: .2s;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      cursor: pointer;
+      padding: 10px 25px;
+      font-size: 20px;
+
+
+    }
+
+    nav ul li a {
+      color: wheat;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: capitalize;
+      animation: sideleft 1s ease forwards;
+      animation-delay: calc(.2s * var(--i));
+    }
+
+    @keyframes sideleft {
+      0% {
+        transform: translateX(-400px);
+        opacity: 0;
+      }
+
+      80% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    ul li a:hover {
+      color: blue;
+      transition: .5s;
+    }
+
+    /* Basic styling */
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .about {
+      width: 100%;
+      padding: 20px 0px;
+      background-color: gray;
+      box-sizing: border-box;
+
+    }
+
+    span {
+      color: blue;
+    }
+
+    .about img {
+      height: auto;
+      width: 300px;
+      border-radius: 50%;
+      border-color: blue;
+      cursor: pointer;
+      padding-top: 50px;
+    }
+
+    .atext {
+      width: 550px;
+    }
+
+    .main {
+      width: 1200px;
+      max-width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+    }
+
+    .atext h2 {
+      font-size: 35px;
+      color: black;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .atext h5 {
+      color: black;
+      letter-spacing: 2px;
+      font-size: 22px;
+      margin-bottom: 25px;
+      text-transform: capitalize;
+    }
+
+    .atext p {
+      color: black;
+      
+      line-height: 28px;
+      font-size: 20px;
+      margin-bottom: 45px;
+      text-align: justify;
+    }
+
+    button {
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 13px 20px;
+      border-radius: 30px;
+      transition: .2s;
+    }
+
+    button:hover {
+      background-color: transparent;
+      color: blue;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      /* Flexbox container */
+      flex-wrap: wrap;
+      /* Allow wrapping of cards */
+      justify-content: center;
+      /* Center the cards horizontally */
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    /* Card styles */
+    .card {
+      background-color: wheat;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin: 20px;
+      width: 500px;
+      /* Set a fixed width for each card */
+    }
+
+    /* .card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+    } */
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+    }
+
+    .card-content p {
+      margin-bottom: 10px;
+    }
+
+    .progress {
+      height: 10px;
+      background-color: white;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar {
+      background-color: blue;
+      height: 100%;
+      border-radius: 5px;
+      width: 0;
+    }
+
+    .progress-label {
+      text-align: right;
+      margin-top: -12px;
+      margin-bottom: 5px;
+      font-size: 0.8em;
+    }
+
+    footer {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.8;
+    }
+
+    footer p:nth-child(1) {
+      font-size: 20px;
+      color: black;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    footer p:nth-child(2) {
+      color: black;
+      font-size: 15px;
+      width: 500px;
+      text-align: center;
+      line-height: 17px;
+    }
+
+    .social {
+      display: flex;
+
+    }
+
+    .social a {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: blue;
+      margin: 0 10px;
+      color: white;
+      border-radius: 50%;
+    }
+
+    .social a:hover {
+      transform: scale3d(1.1, 1.1, 1);
+
+    }
+
+    .dot {
+      position: absolute;
+      bottom: 35px;
+      color: black;
+
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<div class="header">
+  <nav>
+    <h2 class="logo"><span>My</span>Port<span>folio</span></h2>
+    <ul>
+      <li><a href="index.html" style="--i:1">Home</a></li>
+      <li><a href="about.html" style="--i:2">About me</a></li>
+      <li><a href="service.html" style="--i:3">Services</a></li>
+
+      <li><a href="contact.html" style="--i:5">Contact</a></li>
+    </ul>
+
+
+    <a href="resume.html" class="btn">MyResume</a></button>
+
+  </nav>
+</div>
+
+<body>
+  <!--about section-->
+  <section class="about" id="About me">
+    <div class="main">
+      <div class="aimg">
+        <img src="images/bgimg.png">
+        <span class="circle-spin"></span>
+      </div>
+
+      <div class="atext">
+        <h2><span>A</span>bout <span>My</span>self</h2>
+        <h3>I am a <span>Full stack Developer</span></h3>
+        <p>As a Full Stack Developer, I specialize in crafting end-to-end web applications, proficient
+          in both front-end and back-end technologies. With expertise in languages like<span> JavaScript, HTML,CSS</span> and frameworks such as <span>Bootstrap, React, Node.js, and Express</span>, I create scalable,efficient, and dynamic solutions that meet clients' diverse needs.
+        </p>
+        <button>Let's Talk</button>
+      </div>
+    </div><br><br><br>
+
+    <h1 style="text-align: center;font-size: 30px;">My <span>Skills</span></h1>
+    <div class="container">
+      <div class="card">
+
+        <div class="card-content">
+          <!-- <h3>Front End</h3> -->
+
+          <div class="skills">
+            <p>HTML</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+            <div class="progress-label">95%</div>
+            <p>CSS</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <div class="progress-label">90%</div>
+            <p>JavaScript</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+            <div class="progress-label">85%</div>
+            <p>Bootstrap</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+            <div class="progress-label">82%</div>
+            <p>JQuery</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <div class="progress-label">80%</div>
+            
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        
+        <div class="card-content">
+            <!-- <h3>Back End</h3> -->
+           
+            <div class="skills">
+              <p>JSON</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <div class="progress-label">80%</div>
+
+                <p>ReactJs</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+                <div class="progress-label">70%</div>
+                <p>NodeJs</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+                <div class="progress-label">60%</div>
+               
+                <p>MongoDB</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <div class="progress-label">80%</div>
+                <p>ExpressJs</p>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+                <div class="progress-label">70%</div>
+            </div>
+        </div>
+    </div>
+      <!-- Add more cards as needed -->
+    </div>
+
+    <!--Footer section-->
+    <footer>
+      <p>Developed by Deebika Y</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ydeebika/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/deebikatechcode"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="dot">
+        © 2024 All Rights Reserved
+      </div>
+    </footer>
+</body>
+
+</html>

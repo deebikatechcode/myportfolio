@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio About Page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300&family=Rubik+Doodle+Shadow&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  
+
+.header {
+
+  height: 25vh;
+  width: 100%;
+  background-color:black;
+  background-size: cover;
+  background-position: center;
+  font-family: 'poppins';
+ 
+
+} 
+
+span {
+  color:blue;
+}
+
+.fa-bars{
+  color: blue;
+}
+#demo{
+  font-size: 30px;
+  color: blue;
+  text-shadow: 2px 2px 2px 0px;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  animation: float 5s infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  75%{
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+ 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-size-adjust: 1px;
+
+}
+
+.logo {
+  color:wheat;
+  cursor: pointer;
+  font-size: 30px;
+  letter-spacing: 1px;
+  
+}
+
+.btn {
+  background-color:blue;
+  color:white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding:10px 10px;
+  border-radius: 30px;
+  transition:.2s;
+  
+
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: blue;
+  transition: .2s;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block; 
+  cursor: pointer;
+  padding: 10px 25px;
+  font-size: 20px;
+
+}
+
+nav ul li a {
+  color: wheat;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  animation: sideleft 1s ease forwards;
+  animation-delay: calc(.2s * var(--i)) ;
+}
+@keyframes sideleft { 
+  0% { transform: translateX(-400px); opacity: 0;}
+  80% {opacity: 1;}
+  100% { transform: translateX(0); }
+}
+
+ul li a:hover {
+  color: blue;
+  transition: .5s;
+}
+
+.contact {
+    width: 100%;
+    height: 290px;
+    background:gray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact p {
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  .contact .button1,
+  .contact .button2 {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    display:block;
+  
+    border: 1px solid transparent;
+    font-weight: bold;
+    padding: 8px 9px;
+    border-radius: 30px;
+    transition: 0.2s;
+  }
+  
+  .contact .button1:hover,
+  .contact .button2:hover {
+    background-color: transparent;
+    color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+  .container{
+    color:black;text-align: center;
+    width: 600px;
+    padding: 75px 90px;
+    background:gray;
+  
+  
+  }
+  
+  .contact {
+    display: flex; /* Display the contact section as a flex container */
+    flex-wrap: wrap; /* Stack child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+    text-align: center; 
+    opacity: .2s;/* Align text in child elements to the center */
+  }
+  
+  .contact-link {
+    margin-top: 20px; /* Add some spacing between the paragraph and the links */
+  }
+  
+  .contact-link > div {
+    margin-top: 10px; /* Add some spacing between the links */
+  }
+  
+  .button1,
+  .button2 {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button1:hover,
+  .button2:hover {
+    background-color: #0056b3;
+  }
+  footer{
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: grey;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity:0.8;
+}
+footer p:nth-child(1){
+  font-size: 20px;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+footer p:nth-child(2){
+  color:black;
+  font-size: 15px;
+  width: 500px;
+  text-align: center;
+  line-height: 17px;
+}
+.social{
+  display: flex;
+
+}
+.social a{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:blue;
+  margin: 0 10px;
+  color:#fff;
+  border-radius: 50%;
+}
+.social a:hover{
+  transform:scale3d(1.1,1.1,1);
+  
+}
+.dot{
+  position:absolute;
+  bottom: 35px;
+  color:black;
+
+  font-family:'Open Sans',sans-serif;
+  font-size:12px;
+}
+</style>
+<div class="header">
+  <nav>
+      <h2 class="logo"><span>My</span>Port<span>folio</span></h2>
+      <ul>
+          <li><a href="index.html" style="--i:1">Home</a></li>
+          <li><a href="about.html" style="--i:2">About me</a></li>
+          <li><a href="service.html" style="--i:3">Services</a></li>
+          
+          <li><a href="contact.html" style="--i:5">Contact</a></li>
+      </ul>
+
+
+      <a href="resume.html" class="btn">MyResume</a></button>
+      
+  </nav>
+</div>
+ 
+   <!--conact me-->
+   <div class="contact" id="Contact">
+    <p>
+        If You Want To Hire Me For Your Project Please contact me, I Will Get Back To You Shortly!
+        My Contact link below
+    </p>
+    <div class="contact-link">
+        <div>
+            <a class="button1" href=>mail2inboxdbk@gmail.com</a><br>
+        </div>
+        <div><a class="button2" href="https://www.linkedin.com/in/ydeebika/">LinkedIn</a></div>
+    </div>
+</div>
+ <!--Footer section-->
+ <footer>
+    <p>Developed by Deebika Y</p>
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ydeebika/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/deebikatechcode"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="dot">
+        © 2024 All Rights Reserved 
+    </div>
+</footer>
